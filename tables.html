@@ -3,13 +3,14 @@
 <head>
 	<title>Révise tes tables de multiplication</title>
 	<meta http-equiv="Content-type" content="charset=utf8" />
+	<link rel="stylesheet" href="tables.css" />
 	<script src="jquery.js"></script>
 	<script src="tables.js"></script>
 </head>
 <body onload="createQuestion()">
-	<div>
+	<div id="question">
 		<span id="text1"></span>&nbsp;x&nbsp;<span id="text2"></span>&nbsp;=&nbsp;
-		<input type="text" id="answer" name="answer" style="width:30px" autofocus/>
+		<input type="text" id="answer" name="answer" style="width:60px" autofocus/>
 		<br />
 		<input type="button" id="send" value="Envoyer" onclick="checkAnswer()" />
 	</div>
